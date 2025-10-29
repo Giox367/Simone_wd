@@ -1,0 +1,109 @@
+<!doctype html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mini‑progetto semplice — solo media queries</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<div class="container nav-row">
+<div class="brand">Studio Responsive</div>
+<nav aria-label="Primaria">
+<ul>
+<li><a href="https://www.amazon.com">Prodotti</a></li>
+<li><a href="#prezzi">Prezzi</a></li>
+<li><a href="#risorse">Risorse</a></li>
+<li><a href="#contatti">Contatti</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<section class="hero">
+<div>
+<h1>Layout responsive, solo con media queries</h1>
+<p>Base mobile‑first. A 600px la griglia passa a 2 colonne, a 900px a 3. La nav diventa orizzontale e l'hero si affianca.</p>
+<div class="cta">
+<button class="btn primary">Inizia ora</button>
+<button class="btn ghost">Guarda la demo</button>
+</div>
+</div>
+<div class="hero-visual">
+<img alt="Illustrazione semplificata" width="1200" height="500"
+src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='500'><rect width='100%25' height='100%25' fill='%23eef2ff'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-size='22' fill='%23374151'>Immagine demo</text></svg>">
+</div>
+</section>
+
+
+<section class="features" id="prodotti">
+<h2>Caratteristiche</h2>
+<div class="grid">
+<article class="card">
+    <h3>Mobile‑first</h3>
+    <p>Parti da 1 colonna.</p>
+</article>
+<article class="card"><h3>Breakpoint 600px</h3><p>La griglia va a 2 colonne.</p></article>
+<article class="card"><h3>Breakpoint 900px</h3><p>La griglia va a 3 colonne.</p></article>
+<article class="card"><h3>Navigazione</h3><p>Diventa orizzontale ≥ 900px.</p></article>
+<article class="card"><h3>Tipografia</h3><p>Font size dell'hero cresce ai breakpoint.</p></article>
+<article class="card"><h3>CSS pulito</h3><p>Niente prefers.</p></article>
+</div>
+</section>
+
+
+<section id="prezzi" class="features">
+<h2>Prezzi</h2>
+<div class="grid">
+<article class="card"><h3>Starter</h3><p>Per iniziare senza fronzoli.</p></article>
+<article class="card"><h3>Team</h3><p>Per piccoli team.</p></article>
+<article class="card"><h3>Business</h3><p>Per crescere con stabilità.</p></article>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="container">© 2025 Studio Responsive — Demo: solo media queries.</div>
+<div>
+
+
+   <div class="form">
+        <label for="titolo">Inserisci i tuoi dati</label>
+        <input id="nome" type="text" placeholder="Nome">
+        <input id="cognome" type="text" placeholder="Cognome">
+        <input id="email" type="email" placeholder="Email">
+        <button onclick=getInfo()  >Iscriviti</button>
+        </div>
+   
+    <ol>
+        <li><a href=www.amazon.com>Prodotti</a></li>
+        <li><a href="#prezzi">Prezzi</a></li>
+        <li><a href="#risorse">Risorse</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+    </ol>
+    <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Termini</a></li>
+    </ul>
+</div>
+</footer>
+<script>
+    function getInfo(){
+
+
+    let name = document.getElementById("nome");
+    let email = document.getElementById("email");
+    let message = document.getElementById("cognome"); 
+    name.value = "simone";
+    message.value = "bianchi";
+    email.value = "G2PfO@example.com";  
+    console.log(name, email, message);
+}
+</script>
+
+</body>
+</html>
+

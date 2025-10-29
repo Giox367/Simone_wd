@@ -1,0 +1,83 @@
+/* Base (mobile) */
+html, body { height: 100%; }
+body {
+margin: 0;
+font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+color: #1f2937; /* slate-800 */
+background: #ffffff; /* bianco */
+}
+
+
+.container { max-width: 1000px; margin: 0 auto; padding: 1rem; }
+
+
+/* Header e navigazione */
+header { border-bottom: 1px solid #e5e7eb; background: #f9fafb; }
+.brand { color: blue;
+    font-weight: 800; letter-spacing: .2px; }
+
+
+nav { margin-top: .5rem; }
+nav ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
+nav a { text-decoration: none; color: #1f2937; display: block; padding: .5rem .75rem; border-radius: 8px; background: #eef2ff; }
+
+
+/* Hero */
+.hero { padding: 10vh 0 6vh; display: grid; gap: 1rem; }
+.hero h1 { margin: .25rem 0; font-size: clamp(1.8rem, 6vw, 2.2rem); }
+.hero p { margin: 0; color: #4b5563; }
+.cta { margin-top: .75rem; display: flex; gap: .5rem; flex-wrap: wrap; }
+.btn { border: 0; border-radius: 10px; padding: .7rem 1rem; font-weight: 700; cursor: pointer; }
+.btn.primary { background: #4f46e5; color: #ffffff; }
+.btn.ghost { background: #e5e7eb; color: #111827; }
+
+
+.hero-visual img { width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+
+
+/* Griglia caratteristiche */
+.features { margin: 2rem 0 3rem; }
+.features h2 { margin: 0 0 .75rem; font-size: 1.3rem; }
+.grid { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+.card { background: #96c6f6; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1rem; }
+.card h3 { margin: .25rem 0 .35rem; font-size: 1.05rem; }
+.card p { margin: 0; color: #4b5563; }
+
+
+/* Footer */
+footer { border-top: 1px solid #e5e7eb; padding: 1.5rem 0; color: #6b7280; font-size: .95rem; }
+
+
+/* =============================================================
+MEDIA QUERIES — SOLO "only screen"
+============================================================= */
+
+
+/* ≥ 600px: due colonne nella griglia, spazi un po' più ampi */
+@media only screen and (min-width: 600px) {
+.grid { grid-template-columns: repeat(2, 1fr); }
+.container { padding: 1.25rem; }
+.hero h1 { font-size: 2.4rem; }
+}
+form{
+    max-width: 10em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ≥ 900px: tre colonne; nav orizzontale, hero in due colonne */
+@media only screen and (min-width: 900px) {
+.grid { grid-template-columns: repeat(3, 1fr); }
+
+
+.nav-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+nav { margin-top: 0; }
+nav ul { display: flex; gap: .5rem; }
+nav a { background: transparent; }
+
+
+.hero { grid-template-columns: 1.1fr 1fr; align-items: center; gap: 2rem; }
+.hero h1 { font-size: 2.8rem; }
+}
