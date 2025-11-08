@@ -1,0 +1,37 @@
+Esercizi
+
+Pari o dispari
+Dato un numero n, stampa "pari" o "dispari".
+
+Massimo tra due numeri
+Dati a e b, stampa il maggiore (o “uguali” se lo sono).
+
+Massimo tra tre numeri (solo if)
+Dati x, y, z, stampa il massimo senza usare funzioni pronte.
+
+Somma 1..N (for)
+Dato N, calcola la somma dei numeri da 1 a N.
+
+Tabellina
+Dato n, stampa i primi 10 multipli: n × 1 … n × 10.
+
+Conteggio cifre
+Dato un intero positivo n, stampa quante cifre ha (senza convertirlo in stringa).
+
+Somma delle cifre
+Dato n, calcola la somma delle sue cifre (senza stringhe).
+
+Numero inverso
+Dato n, stampa il numero con le cifre al contrario (es. 1234 → 4321), senza stringhe.
+
+Primo sì/no
+Dato n ≥ 2, stampa se è primo (divisibile solo per 1 e sé stesso).
+
+FizzBuzz
+Da 1 a 100: “Fizz” per multipli di 3, “Buzz” per multipli di 5, “FizzBuzz” per entrambi, altrimenti il numero.
+
+Fibonacci fino a N termini (senza array)
+Dato N, stampa i primi N termini della sequenza, aggiornando due variabili.
+
+Palindroma (stringa)
+Data una stringa s, stampa true se è palindroma (ignora spazi e maiuscole/minuscole), altrimenti false.
