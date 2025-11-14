@@ -40,3 +40,87 @@ const pippo = document.getElementById("container");
 //     }, 2000)
 // }
 
+ 
+// 13-11  CAMBIA COLORE 
+
+
+// const bottoneSfondo = document.getElementById('cambiacoloresfondo');
+
+// bottoneSfondo.addEventListener('click', cambiaColore);
+
+
+
+// function cambiaColore() {
+//   const r = Math.floor(Math.random() * 256);
+//   const g = Math.floor(Math.random() * 256);
+//   const b = Math.floor(Math.random() * 256);
+
+//   document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+// }
+
+// window.onload =setInterval(cambiaColore, 1000) ;
+
+// FILTRA LISTA
+// const inputFiltro = document.getElementById('filtro');
+// const listaPersone = document.getElementById('persone');
+// const elementi = listaPersone.getElementsByTagName('li');
+
+// inputFiltro.addEventListener('input', function () {
+//   const testo = inputFiltro.value.toLowerCase();
+
+//   for (let i = 0; i < elementi.length; i++) {
+//     const nome = elementi[i].textContent.toLowerCase();
+
+//     if (nome.includes(testo)) {
+//       elementi[i].style.display = 'list-item';
+//     } else {
+//       elementi[i].style.display = 'none';
+//     }
+//   }
+// })
+
+// MI PIACE
+// const likeBtn = document.getElementById('likeBtn');
+// const likeCount = document.getElementById('likeCount');
+
+// let conteggio = 0;
+// let primoClick = true;
+
+// likeBtn.addEventListener('click', function () {
+//   // ogni click aggiunge un like
+//   conteggio++;
+//   likeCount.textContent = conteggio;
+
+//   // al primo click cambio l’icona del bottone e la lascio piena
+//   if (primoClick) {
+//     likeBtn.textContent = '❤️ Mi piace';
+//     primoClick = false;
+//   }
+// });
+
+// Effetto macchina da scrivere
+// const titoloDigitato = document.getElementById('titoloDigitato');
+// const startTyping = document.getElementById('startTyping');
+
+// const testo = 'Ciao, questo è un effetto macchina da scrivere!';
+// let indice = 0;
+// let intervallo = null;
+
+// startTyping.addEventListener('click', function () {
+//   // reset
+//   titoloDigitato.textContent = '';
+//   indice = 0;
+
+//   if (intervallo !== null) {
+//     clearInterval(intervallo);
+//   }
+
+//   intervallo = setInterval(function () {
+//     if (indice < testo.length) {
+//       titoloDigitato.textContent += testo.charAt(indice);
+//       indice++;
+//     } else {
+//       clearInterval(intervallo);
+//     }
+//   }, 100);
+// });
