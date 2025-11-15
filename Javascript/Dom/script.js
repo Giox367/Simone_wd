@@ -55,10 +55,10 @@ const pippo = document.getElementById("container");
 //   const g = Math.floor(Math.random() * 256);
 //   const b = Math.floor(Math.random() * 256);
 
-//   document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+//   pippo.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
 // }
 
-// window.onload =setInterval(cambiaColore, 1000) ;
+// window.onload =setInterval(cambiaColore, 2000) ;
 
 // FILTRA LISTA
 // const inputFiltro = document.getElementById('filtro');
@@ -122,5 +122,5 @@ const pippo = document.getElementById("container");
 //     } else {
 //       clearInterval(intervallo);
 //     }
-//   }, 100);
+//   }, 300);
 // });
